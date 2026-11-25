@@ -33,6 +33,33 @@ Five authored quarries give progression an ending. Crew members mine, carry, sel
 
 Built with Three.js, JavaScript, original code-native art and DOM/SVG UI. The guided demo lasts roughly 47 seconds of simulation. This is a work-in-progress prototype, with no claimed CPI, retention, revenue or market-validation result.
 
+Read the [full mechanics and design breakdown](DESIGN.md) for the concrete economy trace, progression decisions, crew behavior, UI rationale and system contracts.
+
+## Why each step exists
+
+Capacity gives the player a reason to leave the rock face. Refining changes raw material into a sellable product and creates a production bottleneck. Selling connects the visible work to a reward. Paid upgrades change the next haul through power, capacity or travel speed. Workers extend those same jobs with physical movement, actual inventory and stamina/rest.
+
+```mermaid
+flowchart LR
+    Mine --> Carry --> Refine --> Collect --> Sell --> Upgrade --> Mine
+```
+
+The guided demo makes that loop concrete: an earned opening wallet of **$14**, a **12-unit limestone haul**, **six finished bars sold for $48**, then a **$40 cutter upgrade**. The wallet ends at **$22**, and the other six finished bars remain in the refinery. These are game-balance values, not real-money metrics.
+
+## Progression and company systems
+
+The five quarries progress from Limestone Yard to Copper Ridge, Golden Basin, Redrock Canyon and Summit Quarry. Hardness, resource mixes and authored layouts change the work. Completing a site requires clearing its seams and selling its remaining stock; rewards are paid once, and the final quarry ends the campaign.
+
+The company menu covers machine rentals and fuel, personal tools/backpacks, cutter/cargo/engine/furnace upgrades, a physical automatic hauler, three hireable workers, gold-funded permanent research and the quarry map. The player can leave the machine and work on foot. Recovery guidance takes priority when fuel or rental time expires.
+
+## What the prototype investigates
+
+The design intention is to make the action understandable from the first visible rock contact. The cutter, fracture, conveyor and cargo pile explain the interaction, while the next-action button follows the current inventory. Secondary production, crew and contract detail stays in menus.
+
+The engineering challenge is keeping those visuals honest: only the front cutter damages rock; routes respect the full vehicle footprint; parked/tipping transfers move real stock; bars create income only when sold; and in-transit ore is not duplicated in the cargo pile.
+
+Useful feedback includes whether loading is readable, when refinery travel becomes repetitive, how upgrades change decisions and where automation helps or reduces engagement. This is an invitation for prototype feedback, not a claim that these questions have been validated with players.
+
 ## Repository boundary
 
 This public repository contains the presentation, screenshots and compiled browser builds under `play/`. The editable game source is maintained privately. Compiled browser code is publicly inspectable; no source tree, source map or project-source ZIP is included here.
