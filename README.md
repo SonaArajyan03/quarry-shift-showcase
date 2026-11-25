@@ -2,6 +2,8 @@
 
 **Break rock. Build a company.**
 
+**[Play the public presentation](https://sonaarajyan03.github.io/quarry-shift-showcase/)** · **[Open the game](https://sonaarajyan03.github.io/quarry-shift-showcase/play/index.html?lang=en)** · **[Watch the guided demo](https://sonaarajyan03.github.io/quarry-shift-showcase/play/demo.html?lang=en)**
+
 A playable portrait 3D mining-company prototype by [SonaArajyan03](https://github.com/SonaArajyan03). Follow each haul through the crusher, side conveyor, cargo box, refinery and sale, then reinvest in equipment and a physical quarry crew.
 
 ![Actual Quarry Shift gameplay](assets/mining.png)
